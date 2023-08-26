@@ -1,0 +1,361 @@
+<!DOCTYPE HTML>
+<!--
+  Editorial by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+  <meta name="description" content="Sitio web de la comunidad de Python Colombia">
+  <meta name="author" content="Python Colombia">
+  <title>Django Forms: Validating the World - 2015/09/19 | Python Colombia</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="/static/images/favicon.png" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
+  
+  <!-- CSS -->
+  <!-- Icons -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="/static/css/main.css" />
+
+  <link rel="stylesheet" href="/static/map/css/map.css" />
+</head>
+
+<body class="is-preload">
+  <div class="ga-script">
+<div id="ga-script"></div>
+<script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-114930850-1', 'auto');
+        ga('send', 'pageview');
+</script>
+</div>
+
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+      <div class="inner">
+
+        <!-- Header -->
+        <header id="header">
+          <a href="/" class="logo" target="blank_">
+            <strong>Python Colombia</strong></a>
+          <ul class="icons">
+            <li><a href="https://github.com/ColombiaPython/sitio-web/edit/develop/content/eventos/2015-09-19-django-forms-validating-the-world/contents.lr" target="_blank">Editar en Github</span>
+              </a>
+            </li>
+          </ul>
+        </header>
+
+        <!-- Body --><section>
+  <div class="content">
+    <!-- <h1>Django Forms: Validating the World</h1>
+    <span class="image fit">
+      <img src="/static/images/banner.jpg" alt="">
+    </span> -->
+
+    <div class="image fit banner">
+      <img src="/static/images/banner.jpg" alt="Banner" />
+      <div class="banner-title">
+        <div class="banner-text">
+          <h1>Django Forms: Validating the World</h1></div>
+        </div>
+    </div>
+    <ul class="actions small"><li>
+                <a class="button small" href="/">Python Colombia</a>
+              </li><li>
+                <a class="button small" href="/eventos/">Eventos</a>
+              </li><li>
+                <span class="button primary small"> Django Forms: Validating the World </span>
+              </li></ul>
+  </div>
+</section>
+
+<section>
+  <div class="content">
+
+<style>
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#mapsource {
+  pointer-events: none;
+}  
+</style>
+
+<section>
+  <div class="content">
+    <div class="col-12">
+    <h2>Django Forms: Validating the World</h2>
+    <p>Para registrarse en este evento haga clic en <a href="https://www.meetup.com/Python-Cali/events/225179493/" target="_blank">éste enlace</a>.</p>
+    <h2>¿Cuándo y dónde?</h2>
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12"> 
+        <h3>Fecha:</h3>
+        <p><b>
+        Sábado
+        19 de 
+        septiembre de 
+        2015</b>
+        desde las <b>10:00</b>
+        </p>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+        <h3>Lugar:</h3>
+        <span>Biblioteca Departamental Jorge Garcés Borrero, Piso 2, Punto Vive Digital. Callel 5 # 24A - 91<span></br>
+        <span>Cali, Colombia</span>
+        <br><br>
+      </div>
+    </div>
+
+    
+    <div class="row">
+      <div class="col-12"> 
+    <div class="embed-container">
+      <iframe id= "mapsource" scrollwheel="false" width="800" height="600"
+              frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-76.56148583984375%2C3.3784509639739992%2C-76.55948583984375%2C3.382450963973999&amp;layer=mapnik&amp;marker=3.380450963973999%2C-76.56048583984375"
+              style="border: 1px solid black">
+      </iframe>
+    </div>
+
+    <small>
+      <a href="https://www.openstreetmap.org/#map=18/3.380450963973999/-76.56048583984375">
+      Ver mapa de mayor tamaño
+      </a>
+    </small>
+    </div>
+    </div>
+    <br>
+    
+
+
+    <div class="row">
+      <div class="col-12"> 
+
+    <h3>Informacion:</h3>
+    <p>Los formularios en Django son una poderosa herramienta, con diversas funcionalidades para facilitar el desarrollo de nuestras aplicaciones. </p> <p>En esta ocasión nos enfocaremos en la validación, mostrando el como funciona, como se usa y ejemplos prácticos mostrando diferentes casos donde se pueden aplicar.</p>
+    </div>
+    </div>
+
+    
+    </div>
+  </div>
+</section>
+
+
+  <br /><h2>Organizado por:</h2>
+  <div class="row justify-content-center"><div class="col-lg-3 col-md-3 col-xs-12">
+
+      <a href="/usuarios/python-cali/">
+      
+      <img class="image fit" src="/usuarios/python-cali//logo-python-cali.png" alt="python-cali" />
+      
+      </a>
+
+      
+      <div class="row justify-content-center">
+        <h4>Python Cali </h4>
+      </div>
+      <div class="row justify-content-center">
+        <ul class="icons">
+          
+          <li>
+            <a href="https://www.pythoncali.com/" class="icon fa-globe" target="_blank">
+              <span class="label">Website</span>
+            </a>
+          </li>
+          
+
+          
+          
+          <li>
+            <a href="https://facebook.com/pythoncali" class="icon fa-facebook" target="_blank">
+              <span class="label">Facebook</span>
+            </a>
+          </li>
+          
+          
+          <li>
+            <a href="https://twitter.com/pythoncali" class="icon fa-twitter" target="_blank">
+              <span class="label">Twitter</span>
+            </a>
+          </li>
+          
+          
+        </ul>
+      </div>
+      
+    </div></div>
+
+</div>
+</section>
+<hr class="line-footer" />
+        <!-- Footer -->
+        <footer id="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <h5 class="copyright">Adoptamos el <a href="https://github.com/ColombiaPython/codigo-de-conducta" target="blank_">Código de Conducta</a> de <a href="http://colombia-dev.org/">Colombia Dev</a></h5>
+                <h5 class="copyright">Hecho con
+                  <span class="icon red fa-heart"></span>,
+                  <a href="https://www.python.org/" target="blank_">Python</a> y
+                  <a href="https://www.getlektor.com/" target="blank_">Lektor</a> en Colombia. Diseñado por:
+                  <a href="https://html5up.net" target="blank_">HTML5 UP</a></h5>
+              </div>
+              <div class="col-sm">
+                <ul class="icons">
+                  <li>
+                    <a href="/mapa-sitio" class="icon sitemap fa-sitemap" data-toggle="tooltip" data-placement="top" title="Mapa del Sitio">
+                      <span class="label">Email</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:colombiapython@gmail.com" target="blank_" class="icon email fa-envelope" data-toggle="tooltip" data-placement="top" title="Correo Electrónico">
+                      <span class="label">Email</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.twitter.com/ColombiaPython" target="blank_" class="icon fab fa-twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+                      <span class="label">Twitter</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/ColombiaPython" target="blank_" class="icon facebook fa-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                      <span class="label">Facebook</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/colombiapython/" target="blank_" class="icon instagram fa-instagram" data-toggle="tooltip" data-placement="top" title="Instagram">
+                      <span class="label">Instagram</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/ColombiaPython" target="blank_" class="icon github fa-github-alt" data-toggle="tooltip" data-placement="top" title="Github">
+                      <span class="label">Github</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://t.me/pythoncolombia" target="blank_" class="icon fa-telegram" data-toggle="tooltip" data-placement="top" title="Telegram">
+                      <span class="label">Telegram</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://medium.com/@pythoncolombia" target="blank_" class="icon medium fa-medium" data-toggle="tooltip" data-placement="top" title="Medium">
+                      <span class="label">Medium</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://python-colombia.slack.com/" target="blank_" class="icon slack fa-slack" data-toggle="tooltip" data-placement="top" title="Slack">
+                      <span class="label">Slack</span>
+                    </a>
+                  </li>
+                  <h4>2016 - 2018 © Python Colombia</h4>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+      <div class="inner">
+
+        <!-- Search -->
+        <!-- <section id="search" class="alt">
+          <form method="post" action="#">
+            <input type="text" name="query" id="query" placeholder="Search" />
+          </form>
+        </section> -->
+
+        <!-- Menu -->
+        <nav id="menu">
+          <header class="major">
+            <h2>Menú</h2>
+          </header>
+          <ul id="nav" class="nav navbar-nav menu">
+            <li>
+              <a href="/">Inicio</a>
+              </li>
+              <li>
+                <a href="/django-girls/">Django Girls</a>
+                </li>
+                <li>
+                <a href="/pyladies/">PyLadies</a>
+                </li>
+                <li>
+                <a href="/conferencias/">Conferencias</a>
+                </li>
+                <li>
+                <a href="/pyday/">PyDay</a>
+                </li>
+                <li class="active" >
+                <a href="/eventos/">Eventos</a>
+                </li>
+                <li>
+                <a href="/usuarios/">Comunidad</a>
+                </li>
+                <li>
+                <a href="/blog/">Blog</a>
+                </li>
+                <li>
+                <a href="/prensa/">Prensa</a>
+                </li>
+                <li>
+                <a href="/sobre-nosotros/">Sobre Nosotros</a>
+                </li>
+                <li>
+                <a href="/codigo-de-conducta/">Código de Conducta</a>
+                </li>
+                </ul>
+        </nav>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Scripts -->
+   <script src="/static/js/jquery.min.js"></script>
+  <script src="/static/js/browser.min.js"></script>
+  <script src="/static/js/breakpoints.min.js"></script>
+  <script src="/static/js/util.js"></script>
+  <script src="/static/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  <!-- Map -->
+  <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
+  <script src="/static/gen/js/meetup.js"></script>
+  <script src="/static/map/js/utils.js"></script>
+  <script src="/static/js/accordeon.js"></script>
+  <script src="/static/js/currentDate.js"></script>
+  <script src="/static/js/tooltip.js"></script>
+  <script src="/static/js/tag-event.js"></script>
+  <script src="/static/map/js/map.js"></script>
+
+</body>
+
+</html>

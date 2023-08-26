@@ -1,0 +1,314 @@
+<!DOCTYPE HTML>
+<!--
+  Editorial by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+  <meta name="description" content="Sitio web de la comunidad de Python Colombia">
+  <meta name="author" content="Python Colombia">
+  <title>Django Girls Colombia: ¿Como fue mi experiencia organizando Django Girls Medellín? | Python Colombia</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="/static/images/favicon.png" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
+  
+  <!-- CSS -->
+  <!-- Icons -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="/static/css/main.css" />
+
+  <link rel="stylesheet" href="/static/map/css/map.css" />
+</head>
+
+<body class="is-preload">
+  <div class="ga-script">
+<div id="ga-script"></div>
+<script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-114930850-1', 'auto');
+        ga('send', 'pageview');
+</script>
+</div>
+
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+      <div class="inner">
+
+        <!-- Header -->
+        <header id="header">
+          <a href="/en/" class="logo" target="blank_">
+            <strong>Python Colombia</strong></a>
+          <ul class="icons">
+            <li><a href="https://github.com/ColombiaPython/sitio-web/edit/develop/content/blog/como-fue-mi-experiencia-organizando-django-girls-medellin/contents.lr" target="_blank">Editar en Github</span>
+              </a>
+            </li>
+          </ul>
+        </header>
+
+        <!-- Body --><section>
+  <div class="content">
+    <!-- <h1>Django Girls Colombia: ¿Como fue mi experiencia organizando Django Girls Medellín?</h1>
+    <span class="image fit">
+      <img src="/en/blog/2017/12/como-fue-mi-experiencia-organizando-django-girls-medellin/banner-4-3.jpg" alt="">
+    </span> -->
+
+    <div class="image fit banner">
+      <img src="/en/blog/2017/12/como-fue-mi-experiencia-organizando-django-girls-medellin/banner-4-3.jpg" alt="Banner" />
+      <div class="banner-title">
+        <div class="banner-text">
+          <h1>Django Girls Colombia: ¿Como fue mi experiencia organizando Django Girls Medellín?</h1></div>
+        </div>
+    </div>
+    <ul class="actions small"><li>
+                <a class="button small" href="/en/">Python Colombia</a>
+              </li><li>
+                <a class="button small" href="/en/blog/">Blog</a>
+              </li><li>
+                <span class="button primary small"> Django Girls Colombia: ¿Como fue mi experiencia organizando Django Girls Medellín? </span>
+              </li></ul>
+  </div>
+</section>
+
+<section>
+  <div class="content">
+<!-- section title -->
+<div class="title text-center ">
+  <h2> <span class="color"></span></h2>
+  <div class="border"></div>
+  <p><p>Todo empieza con la idea de de crear una comunidad alrededor del lenguaje de programación que amamos: Python.</p>
+</p>
+</div>
+<!-- /section title -->
+<div class="row">
+  <div class="col-md-offset-2 col-md-8">
+    
+    <p><i>(Para leer éste artículo en español haga clic <a href="/blog/2017/12/como-fue-mi-experiencia-organizando-django-girls-medellin/">aquí</a>)</i></p>
+    
+  </div>
+  <br>
+  <div class="col-12">
+    <p>En principios de abril del 2015 y me encontraba trabajando en un nuevo proyecto web utilizando el framework Python-Django. Era la primera vez que lo utilizaba y estaba feliz:</p>
+<p>Era genial, simple, elegante, robusto, modular. Con pocas líneas ya tenía todo el core del proyecto listo, el admin, los formularios, el login, etc. Era demasiado bueno para ser verdad.</p>
+<p>Indagando en internet, encontré muchísimas personas y startups que lo estaban utilizando para crear sus productos. En todas partes del mundo se habían creado comunidades que reunían a decenas de entusiastas, deseosos de conocer, explorar, aprender y compartir conocimiento alrededor de Python y Django. En New York, en San Francisco, en Madrid, en Buenos Aires. La ola se estaba expandiendo, así que pensé: Porqué no crear nuestra propia comunidad en Medellín? Una búsqueda rápida en google y hago link con <strong>David</strong>, un estadounidense que por la época estaba radicado en la ciudad y era CEO de su propia startup. Hablamos sobre nuestro interés de iniciar una comunidad python local y promover el lenguaje dentro del ecosistema emprendedor de la ciudad. Como nos unía la misma pasión y visión, decidimos reunir esfuerzos y nace <a href="https://www.meetup.com/es/Medellin-Python-y-Django-Meetup/">La comunidad Medellín Python y Django</a></p>
+<p>A los pocos días muchísimas personas se unen a nuestro MeetUp. Dos meses después, ya estábamos realizando nuestro primer evento.</p>
+<p><strong>Es en este contexto cuando nace la iniciativa de realizar el evento Django Girls Medellín 2017.</strong></p>
+<p>Django Girls es una organización sin ánimo de lucro fundada por dos programadoras europeas, cuya misión es acercar a las mujeres el mundo de la programación y la tecnología. Su dinámica, es la realización de un taller de un día de duración, donde las participantes desde cero, desarrollan un blog utilizando #Python, #Django, #CSS y #HTML. Ellas están permanentemente acompañadas por un guía, quien ofrece su conocimiento y experiencia de manera voluntaria.</p>
+<p>Es un hecho, que a pesar de los grandes avances que las mujeres han logrado en la reivindicación sus derechos en los últimos 50 años, hoy en día ellas siguen cumpliendo un rol secundario en el mundo de la tecnología. Son pocas las CEOs, directoras y ejecutivas en las grandes compañías de la era digital. Desafortunadamente, aún sigue existiendo una gran brecha de género en nuestra industria, y el índice de participación de las mujeres es bastante bajo. Es un tema complejo imposible de abordar en unas pocas líneas.</p>
+<p>Lo importante es qué acciones estamos realizando para cambiar ésto y es aquí donde iniciativas como Django Girls son tan importantes.</p>
+<p><img src="banner.jpeg" class="image fit" /></p>
+<p class="text-center"><small><a href="https://argentinaenpython.com/galeria/django-girls-medellin/">Foto Grupal del Taller de Programación para mujeres Django Girls Medellín</a>, realizado el 24 de Junio de 2017</small></p><p>La idea de realizar el <strong><a href="https://argentinaenpython.com/django-girls/2017/06/medellin/">Taller de programación para mujeres Django Girls en Medellín</a></strong> partió de <strong><a href="https://twitter.com/jhonjairoroa87">John Roa</a></strong> y <strong><a href="https://twitter.com/EllaQuimica">Johanna Sanchez</a></strong>.</p>
+<p>Fue un proceso de tres meses, liderado por <a href="https://twitter.com/EllaQuimica">Johanna Sanchez</a>, quien es co-fundadora de <a href="https://twitter.com/argenpython">Argentina en Python</a>, un proyecto colaborativo cuyo objetivo es promover el uso de Python a través de toda Latinoamérica y <strong>John</strong> líder de la comunidad <strong><a href="https://www.facebook.com/colombiapython/">Python Colombia</a></strong>, con una amplia experiencia en la organización de eventos de comunidad locales y <a href="http://2017.pycon.co/">PyCon Colombia</a>. Ellos, junto con <strong><a href="https://twitter.com/reydelhumo">Manuel Kaufmann</a></strong>, Embajador Python para Latinoamérica de la Python Software Foundation —<strong> PSF</strong> y fundador de Argentina en Python, fueron los encargados de liderar el equipo de trabajo, establecer las tareas y fijar el cronograma de trabajo para esos tres meses. Sin su invaluable apoyo, el evento no hubiera sido posible.</p>
+<p>Con la ayuda de miembros voluntarios de la comunidad python medellín y colaboradores externos, logramos ejecutar las actividades de divulgación y organización.</p>
+<p>Gracias a mi buen amigo <strong>Fabio Hurtado</strong>, periodista y comunicador, tuve la oportunidad de aparecer en dos medios locales: Radio Universidad de Antioquia y Telemedellín TV, para hablar sobre la iniciativa Django Girls.</p>
+<p>El diseño de todas las piezas gráficas estuvo a cargo de <strong><a href="https://www.facebook.com/blure.bkc">Bryan Lombana</a></strong>, diseñador gráfico y gran amigo también.</p>
+<p>El lugar escogido para realizar el taller fué <a href="https://www.facebook.com/groups/atomhouseMDE/">Atom House</a>, un espacio de trabajo colaborativo, quienes han sido siempre muy generosos en abrirnos sus espacios para todas las actividades de comunidad que hemos venido realizando. <strong><a href="https://twitter.com/jcrodriguezu">Juan Carlos Rodríguez</a></strong>, miembro de Python Medellín y co-organizador de los meetups, fué quien se encargó de asegurarse que el espacio cumplía con los requisitos necesarios y estuvo siempre pendiente de toda la logística del lugar.</p>
+<p>El dinero necesario que nos permitió llevar a buen puerto el taller, fueron aportados por nuestros patrocinadores. Tuvimos la suerte de contar con su generosidad y apoyo. Gracias a <a href="https://medium.com/monoku">Monoku</a>, <a href="https://www.facebook.com/platzi/">Platzi</a>, <a href="https://www.facebook.com/gapcr">Growth Acceleration</a>, GitHub, <a href="https://twitter.com/ThePSF">PSF</a>, <a href="https://www.facebook.com/argentinaenpython/">Argentina en Python</a>, <a href="https://www.facebook.com/threatstream/">Anomali</a> y <a href="http://www.lendingfront.com/">Lending Front</a>.</p>
+<p><img src="01.png" class="image fit" /></p>
+<p class="text-center"><small></p><p>El día del evento fue muy gratificante ver la gran asistencia: más de 30 personas reunidas, con las ganas por aprender algo nuevo. Un espacio de conocimiento, inclusión y aprendizaje. Fue una jornada larga pero muy satisfactoria, donde gracias al esfuerzo de todos, logramos realizar un evento de altísima calidad, comprometidos siempre en nuestro objetivo: lograr que más mujeres ingresen al mundo de la tecnología y se conviertan en agentes activas y transformadoras de su entorno.</p>
+<p><img src="02.png" class="image fit" /></p>
+<p class="text-center"><small>Participantes del Taller de Programación para mujeres Django Girls Medellin</small></p><p>Por supuesto, no puedo olvidar mencionar a todos nuestros guías: Cesar, Diego, Gonzalo, Esteban, Gustavo, Luis y Mauricio. Su participación fue vital para el éxito del evento.</p>
+<p><img src="03.png" class="image fit" /></p>
+<p class="text-center"><small>El Equipo de organizadores</small></p><p>Esperamos repetir en el 2018 y verlos a todos nuevamente. Por el momento, suerte y pulso.</p>
+
+  </div>
+</div>
+<hr class="major" />
+<section>
+  <div class="content">
+    <h2>Categorias</h2>
+    
+      
+      <a href="/en/blog/categories/django-girls/">Django Girls </a> &nbsp;&nbsp;·&nbsp;&nbsp;
+    
+      
+      <a href="/en/blog/categories/colombia/">Colombia </a> &nbsp;&nbsp;·&nbsp;&nbsp;
+    
+      
+      <a href="/en/blog/categories/python/">Python </a> &nbsp;&nbsp;·&nbsp;&nbsp;
+    
+  </div>
+</section>
+<hr class="major" />
+<section>
+  <div class="content">
+  
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function() { this.page.identifier = "/blog/como-fue-mi-experiencia-organizando-django-girls-medellin"; this.page.url = "https://www.python.org.co/en/blog/2017/12/como-fue-mi-experiencia-organizando-django-girls-medellin/"; };
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = '//python-colombia.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>
+  Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript"
+    rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+
+  </div>
+</section>
+
+</div>
+</section>
+<hr class="line-footer" />
+        <!-- Footer -->
+        <footer id="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <h5 class="copyright">Adoptamos el <a href="https://github.com/ColombiaPython/codigo-de-conducta" target="blank_">Código de Conducta</a> de <a href="http://colombia-dev.org/">Colombia Dev</a></h5>
+                <h5 class="copyright">Hecho con
+                  <span class="icon red fa-heart"></span>,
+                  <a href="https://www.python.org/" target="blank_">Python</a> y
+                  <a href="https://www.getlektor.com/" target="blank_">Lektor</a> en Colombia. Diseñado por:
+                  <a href="https://html5up.net" target="blank_">HTML5 UP</a></h5>
+              </div>
+              <div class="col-sm">
+                <ul class="icons">
+                  <li>
+                    <a href="/mapa-sitio" class="icon sitemap fa-sitemap" data-toggle="tooltip" data-placement="top" title="Mapa del Sitio">
+                      <span class="label">Email</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:colombiapython@gmail.com" target="blank_" class="icon email fa-envelope" data-toggle="tooltip" data-placement="top" title="Correo Electrónico">
+                      <span class="label">Email</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.twitter.com/ColombiaPython" target="blank_" class="icon fab fa-twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+                      <span class="label">Twitter</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/ColombiaPython" target="blank_" class="icon facebook fa-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                      <span class="label">Facebook</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/colombiapython/" target="blank_" class="icon instagram fa-instagram" data-toggle="tooltip" data-placement="top" title="Instagram">
+                      <span class="label">Instagram</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/ColombiaPython" target="blank_" class="icon github fa-github-alt" data-toggle="tooltip" data-placement="top" title="Github">
+                      <span class="label">Github</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://t.me/pythoncolombia" target="blank_" class="icon fa-telegram" data-toggle="tooltip" data-placement="top" title="Telegram">
+                      <span class="label">Telegram</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://medium.com/@pythoncolombia" target="blank_" class="icon medium fa-medium" data-toggle="tooltip" data-placement="top" title="Medium">
+                      <span class="label">Medium</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://python-colombia.slack.com/" target="blank_" class="icon slack fa-slack" data-toggle="tooltip" data-placement="top" title="Slack">
+                      <span class="label">Slack</span>
+                    </a>
+                  </li>
+                  <h4>2016 - 2018 © Python Colombia</h4>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+      <div class="inner">
+
+        <!-- Search -->
+        <!-- <section id="search" class="alt">
+          <form method="post" action="#">
+            <input type="text" name="query" id="query" placeholder="Search" />
+          </form>
+        </section> -->
+
+        <!-- Menu -->
+        <nav id="menu">
+          <header class="major">
+            <h2>Menú</h2>
+          </header>
+          <ul id="nav" class="nav navbar-nav menu">
+            <li>
+              <a href="/en/">Inicio</a>
+              </li>
+              <li>
+                <a href="/en/django-girls/">Django Girls</a>
+                </li>
+                <li>
+                <a href="/en/pyladies/">PyLadies</a>
+                </li>
+                <li>
+                <a href="/en/conferencias/">Conferencias</a>
+                </li>
+                <li>
+                <a href="/en/pyday/">PyDay</a>
+                </li>
+                <li>
+                <a href="/en/eventos/">Eventos</a>
+                </li>
+                <li>
+                <a href="/en/usuarios/">Comunidad</a>
+                </li>
+                <li class="active" >
+                <a href="/en/blog/">Blog</a>
+                </li>
+                <li>
+                <a href="/en/prensa/">Prensa</a>
+                </li>
+                <li>
+                <a href="/en/sobre-nosotros/">Sobre Nosotros</a>
+                </li>
+                <li>
+                <a href="/en/codigo-de-conducta/">Código de Conducta</a>
+                </li>
+                </ul>
+        </nav>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Scripts -->
+   <script src="/static/js/jquery.min.js"></script>
+  <script src="/static/js/browser.min.js"></script>
+  <script src="/static/js/breakpoints.min.js"></script>
+  <script src="/static/js/util.js"></script>
+  <script src="/static/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  <!-- Map -->
+  <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
+  <script src="/static/gen/js/meetup.js"></script>
+  <script src="/static/map/js/utils.js"></script>
+  <script src="/static/js/accordeon.js"></script>
+  <script src="/static/js/currentDate.js"></script>
+  <script src="/static/js/tooltip.js"></script>
+  <script src="/static/js/tag-event.js"></script>
+  <script src="/static/map/js/map.js"></script>
+
+</body>
+
+</html>
